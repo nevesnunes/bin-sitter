@@ -1,0 +1,1166 @@
+[
+  {
+    "type": "Elf",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "abi",
+          "named": true
+        },
+        {
+          "type": "abi_version",
+          "named": true
+        },
+        {
+          "type": "bits",
+          "named": true
+        },
+        {
+          "type": "ei_version",
+          "named": true
+        },
+        {
+          "type": "endian",
+          "named": true
+        },
+        {
+          "type": "header___raw__m_program_headers",
+          "named": true
+        },
+        {
+          "type": "header___raw__m_section_headers",
+          "named": true
+        },
+        {
+          "type": "header___raw__m_section_names",
+          "named": true
+        },
+        {
+          "type": "header__e_ehsize",
+          "named": true
+        },
+        {
+          "type": "header__e_type",
+          "named": true
+        },
+        {
+          "type": "header__e_version",
+          "named": true
+        },
+        {
+          "type": "header__entry_point",
+          "named": true
+        },
+        {
+          "type": "header__flags",
+          "named": true
+        },
+        {
+          "type": "header__machine",
+          "named": true
+        },
+        {
+          "type": "header__program_header_entry_size",
+          "named": true
+        },
+        {
+          "type": "header__program_header_offset",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__align",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__filesz",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags32",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags64",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__alloc",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__exclude",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__exec_instr",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__execute",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__info_link",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__link_order",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__mask_os",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__mask_proc",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__merge",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__ordered",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__os_non_conforming",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__read",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__strings",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__tls",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__flags_obj__write",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__memsz",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__offset",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__paddr",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__type",
+          "named": true
+        },
+        {
+          "type": "header__program_headers__vaddr",
+          "named": true
+        },
+        {
+          "type": "header__qty_program_header",
+          "named": true
+        },
+        {
+          "type": "header__qty_section_header",
+          "named": true
+        },
+        {
+          "type": "header__section_header_entry_size",
+          "named": true
+        },
+        {
+          "type": "header__section_header_offset",
+          "named": true
+        },
+        {
+          "type": "header__section_headers___raw__m_body",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__addr",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__align",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__addend",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__bind",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__descriptor",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__descriptor_padding",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__confalt",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__direct",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__dispreldne",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__disprelpnd",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__edited",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__endfiltee",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__globaudit",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__group",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__ignmuldef",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__initfirst",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__interpose",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__loadfltr",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__nodeflib",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__nodelete",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__nodirect",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__nodump",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__nohdr",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__noksyms",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__noopen",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__noreloc",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__now",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__origin",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__pie",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__rtld_global",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__singleton",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__stub",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__symintpose",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_1_values__trans",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_values__bind_now",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_values__static_tls",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_values__symbolic",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__flag_values__textrel",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__info",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__is_sh_idx_os",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__is_sh_idx_proc",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__is_sh_idx_reserved",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__is_value_str",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__len_descriptor",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__len_name",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__name",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__name_padding",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__offset",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__ofs_name",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__other",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__sh_idx",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__sh_idx_special",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__size",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__size_b32",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__size_b64",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__tag",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__tag_enum",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__type",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__value",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__value_b32",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__value_b64",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__value_or_ptr",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__value_str",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__entries__visibility",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__body__is_string_table_linked",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__entry_size",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__alloc",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__exclude",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__exec_instr",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__execute",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__info_link",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__link_order",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__mask_os",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__mask_proc",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__merge",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__ordered",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__os_non_conforming",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__read",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__strings",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__tls",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__flags_obj__write",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__info",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__len_body",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__linked_section",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__linked_section_idx",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__name",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__ofs_body",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__ofs_name",
+          "named": true
+        },
+        {
+          "type": "header__section_headers__type",
+          "named": true
+        },
+        {
+          "type": "header__section_names_idx",
+          "named": true
+        },
+        {
+          "type": "magic",
+          "named": true
+        },
+        {
+          "type": "pad",
+          "named": true
+        },
+        {
+          "type": "sh_idx_hi_os",
+          "named": true
+        },
+        {
+          "type": "sh_idx_hi_proc",
+          "named": true
+        },
+        {
+          "type": "sh_idx_hi_reserved",
+          "named": true
+        },
+        {
+          "type": "sh_idx_lo_os",
+          "named": true
+        },
+        {
+          "type": "sh_idx_lo_proc",
+          "named": true
+        },
+        {
+          "type": "sh_idx_lo_reserved",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "abi",
+    "named": true
+  },
+  {
+    "type": "abi_version",
+    "named": true
+  },
+  {
+    "type": "bits",
+    "named": true
+  },
+  {
+    "type": "ei_version",
+    "named": true
+  },
+  {
+    "type": "endian",
+    "named": true
+  },
+  {
+    "type": "header___raw__m_program_headers",
+    "named": true
+  },
+  {
+    "type": "header___raw__m_section_headers",
+    "named": true
+  },
+  {
+    "type": "header___raw__m_section_names",
+    "named": true
+  },
+  {
+    "type": "header__e_ehsize",
+    "named": true
+  },
+  {
+    "type": "header__e_type",
+    "named": true
+  },
+  {
+    "type": "header__e_version",
+    "named": true
+  },
+  {
+    "type": "header__entry_point",
+    "named": true
+  },
+  {
+    "type": "header__flags",
+    "named": true
+  },
+  {
+    "type": "header__machine",
+    "named": true
+  },
+  {
+    "type": "header__program_header_entry_size",
+    "named": true
+  },
+  {
+    "type": "header__program_header_offset",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__align",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__filesz",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags32",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags64",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__alloc",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__exclude",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__exec_instr",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__execute",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__info_link",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__link_order",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__mask_os",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__mask_proc",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__merge",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__ordered",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__os_non_conforming",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__read",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__strings",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__tls",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__flags_obj__write",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__memsz",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__offset",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__paddr",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__type",
+    "named": true
+  },
+  {
+    "type": "header__program_headers__vaddr",
+    "named": true
+  },
+  {
+    "type": "header__qty_program_header",
+    "named": true
+  },
+  {
+    "type": "header__qty_section_header",
+    "named": true
+  },
+  {
+    "type": "header__section_header_entry_size",
+    "named": true
+  },
+  {
+    "type": "header__section_header_offset",
+    "named": true
+  },
+  {
+    "type": "header__section_headers___raw__m_body",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__addr",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__align",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__addend",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__bind",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__descriptor",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__descriptor_padding",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__confalt",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__direct",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__dispreldne",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__disprelpnd",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__edited",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__endfiltee",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__globaudit",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__group",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__ignmuldef",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__initfirst",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__interpose",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__loadfltr",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__nodeflib",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__nodelete",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__nodirect",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__nodump",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__nohdr",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__noksyms",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__noopen",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__noreloc",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__now",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__origin",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__pie",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__rtld_global",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__singleton",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__stub",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__symintpose",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_1_values__trans",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_values__bind_now",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_values__static_tls",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_values__symbolic",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__flag_values__textrel",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__info",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__is_sh_idx_os",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__is_sh_idx_proc",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__is_sh_idx_reserved",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__is_value_str",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__len_descriptor",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__len_name",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__name",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__name_padding",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__offset",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__ofs_name",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__other",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__sh_idx",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__sh_idx_special",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__size",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__size_b32",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__size_b64",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__tag",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__tag_enum",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__type",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__value",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__value_b32",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__value_b64",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__value_or_ptr",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__value_str",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__entries__visibility",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__body__is_string_table_linked",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__entry_size",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__alloc",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__exclude",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__exec_instr",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__execute",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__info_link",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__link_order",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__mask_os",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__mask_proc",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__merge",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__ordered",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__os_non_conforming",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__read",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__strings",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__tls",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__flags_obj__write",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__info",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__len_body",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__linked_section",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__linked_section_idx",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__name",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__ofs_body",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__ofs_name",
+    "named": true
+  },
+  {
+    "type": "header__section_headers__type",
+    "named": true
+  },
+  {
+    "type": "header__section_names_idx",
+    "named": true
+  },
+  {
+    "type": "magic",
+    "named": true
+  },
+  {
+    "type": "pad",
+    "named": true
+  },
+  {
+    "type": "sh_idx_hi_os",
+    "named": true
+  },
+  {
+    "type": "sh_idx_hi_proc",
+    "named": true
+  },
+  {
+    "type": "sh_idx_hi_reserved",
+    "named": true
+  },
+  {
+    "type": "sh_idx_lo_os",
+    "named": true
+  },
+  {
+    "type": "sh_idx_lo_proc",
+    "named": true
+  },
+  {
+    "type": "sh_idx_lo_reserved",
+    "named": true
+  }
+]

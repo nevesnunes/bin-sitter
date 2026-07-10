@@ -1,0 +1,116 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
+  "name": "ptrs",
+  "rules": {
+    "Ptrs": {
+      "type": "REPEAT",
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "_pad0"
+              },
+              {
+                "type": "BLANK"
+              }
+            ]
+          },
+          {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "footer"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header_field1"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header_field2"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header_field3_u8x4__u8"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "ref_header_field2__ptr16"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "ref_header_field2__ref_header_field2_ptr__u16"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "ref_header_field2__u16"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "_pad"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "extras": [
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [
+    {
+      "type": "SYMBOL",
+      "name": "footer"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header_field1"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header_field2"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header_field3_u8x4__u8"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "ref_header_field2__ptr16"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "ref_header_field2__ref_header_field2_ptr__u16"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "ref_header_field2__u16"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_pad"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_pad0"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_err"
+    }
+  ],
+  "inline": [],
+  "supertypes": [],
+  "reserved": {}
+}

@@ -1,0 +1,1204 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
+  "name": "elf",
+  "rules": {
+    "Elf": {
+      "type": "REPEAT",
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "_pad0"
+              },
+              {
+                "type": "BLANK"
+              }
+            ]
+          },
+          {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "abi"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "abi_version"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "bits"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "ei_version"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "endian"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header___raw__m_program_headers"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header___raw__m_section_headers"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header___raw__m_section_names"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__e_ehsize"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__e_type"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__e_version"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__entry_point"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__flags"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__machine"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_header_entry_size"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_header_offset"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__align"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__filesz"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags32"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags64"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__alloc"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__exclude"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__exec_instr"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__execute"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__info_link"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__link_order"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__mask_os"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__mask_proc"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__merge"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__ordered"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__os_non_conforming"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__read"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__strings"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__tls"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__flags_obj__write"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__memsz"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__offset"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__paddr"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__type"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__program_headers__vaddr"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__qty_program_header"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__qty_section_header"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_header_entry_size"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_header_offset"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers___raw__m_body"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__addr"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__align"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__addend"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__bind"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__descriptor"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__descriptor_padding"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__confalt"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__direct"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__dispreldne"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__disprelpnd"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__edited"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__endfiltee"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__globaudit"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__group"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__ignmuldef"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__initfirst"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__interpose"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__loadfltr"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__nodeflib"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__nodelete"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__nodirect"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__nodump"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__nohdr"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__noksyms"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__noopen"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__noreloc"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__now"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__origin"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__pie"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__rtld_global"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__singleton"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__stub"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__symintpose"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_1_values__trans"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_values__bind_now"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_values__static_tls"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_values__symbolic"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__flag_values__textrel"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__info"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__is_sh_idx_os"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__is_sh_idx_proc"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__is_sh_idx_reserved"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__is_value_str"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__len_descriptor"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__len_name"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__name"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__name_padding"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__offset"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__ofs_name"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__other"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__sh_idx"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__sh_idx_special"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__size"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__size_b32"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__size_b64"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__tag"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__tag_enum"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__type"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__value"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__value_b32"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__value_b64"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__value_or_ptr"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__value_str"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__entries__visibility"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__body__is_string_table_linked"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__entry_size"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__alloc"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__exclude"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__exec_instr"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__execute"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__info_link"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__link_order"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__mask_os"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__mask_proc"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__merge"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__ordered"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__os_non_conforming"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__read"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__strings"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__tls"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__flags_obj__write"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__info"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__len_body"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__linked_section"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__linked_section_idx"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__name"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__ofs_body"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__ofs_name"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_headers__type"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "header__section_names_idx"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "magic"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "pad"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "sh_idx_hi_os"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "sh_idx_hi_proc"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "sh_idx_hi_reserved"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "sh_idx_lo_os"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "sh_idx_lo_proc"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "sh_idx_lo_reserved"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "extras": [
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [
+    {
+      "type": "SYMBOL",
+      "name": "abi"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "abi_version"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "bits"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "ei_version"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "endian"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header___raw__m_program_headers"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header___raw__m_section_headers"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header___raw__m_section_names"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__e_ehsize"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__e_type"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__e_version"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__entry_point"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__flags"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__machine"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_header_entry_size"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_header_offset"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__align"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__filesz"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags32"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags64"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__alloc"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__exclude"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__exec_instr"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__execute"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__info_link"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__link_order"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__mask_os"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__mask_proc"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__merge"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__ordered"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__os_non_conforming"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__read"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__strings"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__tls"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__flags_obj__write"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__memsz"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__offset"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__paddr"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__type"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__program_headers__vaddr"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__qty_program_header"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__qty_section_header"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_header_entry_size"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_header_offset"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers___raw__m_body"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__addr"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__align"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__addend"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__bind"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__descriptor"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__descriptor_padding"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__confalt"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__direct"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__dispreldne"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__disprelpnd"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__edited"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__endfiltee"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__globaudit"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__group"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__ignmuldef"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__initfirst"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__interpose"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__loadfltr"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__nodeflib"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__nodelete"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__nodirect"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__nodump"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__nohdr"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__noksyms"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__noopen"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__noreloc"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__now"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__origin"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__pie"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__rtld_global"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__singleton"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__stub"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__symintpose"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_1_values__trans"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_values__bind_now"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_values__static_tls"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_values__symbolic"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__flag_values__textrel"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__info"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__is_sh_idx_os"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__is_sh_idx_proc"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__is_sh_idx_reserved"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__is_value_str"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__len_descriptor"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__len_name"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__name"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__name_padding"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__offset"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__ofs_name"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__other"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__sh_idx"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__sh_idx_special"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__size"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__size_b32"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__size_b64"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__tag"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__tag_enum"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__type"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__value"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__value_b32"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__value_b64"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__value_or_ptr"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__value_str"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__entries__visibility"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__body__is_string_table_linked"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__entry_size"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__alloc"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__exclude"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__exec_instr"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__execute"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__info_link"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__link_order"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__mask_os"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__mask_proc"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__merge"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__ordered"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__os_non_conforming"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__read"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__strings"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__tls"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__flags_obj__write"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__info"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__len_body"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__linked_section"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__linked_section_idx"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__name"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__ofs_body"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__ofs_name"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_headers__type"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "header__section_names_idx"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "magic"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "pad"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "sh_idx_hi_os"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "sh_idx_hi_proc"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "sh_idx_hi_reserved"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "sh_idx_lo_os"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "sh_idx_lo_proc"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "sh_idx_lo_reserved"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_pad0"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_err"
+    }
+  ],
+  "inline": [],
+  "supertypes": [],
+  "reserved": {}
+}

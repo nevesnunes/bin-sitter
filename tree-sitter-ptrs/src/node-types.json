@@ -1,0 +1,70 @@
+[
+  {
+    "type": "Ptrs",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "footer",
+          "named": true
+        },
+        {
+          "type": "header_field1",
+          "named": true
+        },
+        {
+          "type": "header_field2",
+          "named": true
+        },
+        {
+          "type": "header_field3_u8x4__u8",
+          "named": true
+        },
+        {
+          "type": "ref_header_field2__ptr16",
+          "named": true
+        },
+        {
+          "type": "ref_header_field2__ref_header_field2_ptr__u16",
+          "named": true
+        },
+        {
+          "type": "ref_header_field2__u16",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "footer",
+    "named": true
+  },
+  {
+    "type": "header_field1",
+    "named": true
+  },
+  {
+    "type": "header_field2",
+    "named": true
+  },
+  {
+    "type": "header_field3_u8x4__u8",
+    "named": true
+  },
+  {
+    "type": "ref_header_field2__ptr16",
+    "named": true
+  },
+  {
+    "type": "ref_header_field2__ref_header_field2_ptr__u16",
+    "named": true
+  },
+  {
+    "type": "ref_header_field2__u16",
+    "named": true
+  }
+]

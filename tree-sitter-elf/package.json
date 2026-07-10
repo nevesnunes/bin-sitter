@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "tree-sitter-cli": "^0.26.9"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.elf",
+      "file-types": [
+        "elf"
+      ],
+      "injection-regex": "elf",
+      "highlights": [
+        "queries/highlights.scm"
+      ]
+    }
+  ]
+}
